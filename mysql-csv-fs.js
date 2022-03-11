@@ -1,13 +1,13 @@
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const Json2csvParser = require("json2csv").Parser;
 const fs = require("fs");
 
 // Create a connection to the database
 const connection = mysql.createConnection({
   host: "localhost",
-  user: "root",
-  password: "123456",
-  database: "testdb"
+  user: "admin",
+  password: "admin",
+  database: "ProjectData"
 });
 
 // open the MySQL connection
